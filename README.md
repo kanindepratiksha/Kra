@@ -73,18 +73,62 @@ npx playwright show-report
 ```
 ## 📂 Project Structure
 ```
-healthconnect-automation/
+healthconnect-e2e/
+│
+├── .github/                         # GitHub workflows / configs (if any)
+│
+├── node_modules/                    # Installed dependencies
+│
+├── playwright-report/               # Playwright HTML reports
+│   ├── data/
+│   └── index.html
+│
+├── src/
+│   ├── fixtures/                    # Test data and fixtures
+│   │   └── testData.ts
+│   │
+│   ├── pages/                       # Page Object Model (POM)
+│   │   ├── BasePage.ts
+│   │   ├── LoginPage.ts
+│   │   ├── RegistrationPage.ts
+│   │   ├── SearchPage.ts
+│   │   ├── AppointmentBookingPage.ts
+│   │   ├── DoctorDashboardPage.ts
+│   │   ├── DoctorProfileSetupPage.ts
+│   │   ├── PatientDashboardPage.ts
+│   │   └── PaymentPage.ts
+│   │
+│   └── utils/                       # Utility & helper functions
+│       ├── apiHelper.ts
+│       ├── auth.ts
+│       └── env.ts
+│
+├── test-results/                    # Execution artifacts
+│   ├── error-context.md
+│   ├── test-failed-1.png
+│   └── video.webm
 │
 ├── tests/
-│   ├── sanity/
-│   │   ├── login.spec.ts
-│   │   ├── appointments_records_access.spec.ts
+│   ├── sanity/                      # Sanity test suite
+│   │   ├── 00_registration.spec.ts
+│   │   ├── 01_login.spec.ts
+│   │   ├── 02_doctor_profile_setup.spec.ts
+│   │   ├── 03_patient_search_and_book.spec.ts
+│   │   ├── 04_doctor_sees_appointment.spec.ts
+│   │   └── 05_patient_payment_and_review.spec.ts
+│   │
+│   └── regression/                  # Regression test suite
+│       └── 06_medical_records_access.spec.ts
 │
-├── playwright-report/
+├── .env                             # Environment variables
+├── .env.example                     # Sample env configuration
 │
-├── playwright.config.ts
-├── package.json
-└── README.md
+├── playwright.config.ts             # Playwright configuration
+├── package.json                     # Project dependencies & scripts
+├── package-lock.json
+├── tsconfig.json                    # TypeScript configuration
+└── README.md                        # Project documentation
+
 ```
 ### ✅ Key Highlights
 - Sanity automation for core workflows
