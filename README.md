@@ -31,7 +31,7 @@ npm -v
 ```
 git clone <repository-url>
 ```
-OR unzip the provided automation package.
+OR download and unzip the project folder.
 
 ## Navigate to the project directory:
 ```
