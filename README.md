@@ -20,16 +20,15 @@ Ensure the following are installed on your system before setup:
 - Git (optional)
 
 ### Verify installation:
-```bash
 node -v
 npm -v
 
+
 ### ⚙️ Setup Instructions
 Clone or unzip the project:
-
-bash
-Copy code
+```
 git clone <repository-url>
+```
 OR unzip the provided automation package.
 
 Navigate to the project directory:
