@@ -87,20 +87,15 @@ healthconnect-automation/
 └── README.md
 ```
 ### ✅ Key Highlights
-Sanity automation for core workflows
-
-Tag-based execution support
-
-HTML reporting
-
-Scalable Playwright framework
-
-AI-assisted test design approach
+- Sanity automation for core workflows
+- Tag-based execution support
+- HTML reporting
+- Scalable Playwright framework
+- AI-assisted test design approach
 
 ### 🧠 Notes
-Test credentials are handled via test data or environment variables.
-
-Ensure the HealthConnect application is accessible before execution.
+- Test credentials are handled via test data or environment variables.
+- Ensure the HealthConnect application is accessible before execution.
 
 Tests are designed to be independent and reusable.
 
