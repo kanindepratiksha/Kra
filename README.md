@@ -101,5 +101,5 @@ Tests are designed to be independent and reusable.
 
 ### 👩‍💻 Author
 Pratiksha Kaninde
-QA Automation Engineer
+
 
