@@ -19,11 +19,12 @@ Ensure the following are installed on your system before setup:
 - Visual Studio Code (recommended)
 - Git (optional)
 
-Verify installation:
+### Verify installation:
 ```bash
 node -v
 npm -v
-⚙️ Setup Instructions
+
+### ⚙️ Setup Instructions
 Clone or unzip the project:
 
 bash
