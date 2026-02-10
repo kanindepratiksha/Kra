@@ -20,8 +20,10 @@ Ensure the following are installed on your system before setup:
 - Git (optional)
 
 ### Verify installation:
+```
 node -v
 npm -v
+```
 
 
 ### ⚙️ Setup Instructions
